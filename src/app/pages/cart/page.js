@@ -7,7 +7,7 @@ import Wrapper from '@/app/components/Wrapper';
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useSelector } from 'react-redux';
 import CartItem from '@/app/components/CartItem';
-import { Checkout } from '@/chechout';
+
 
 
 
@@ -79,9 +79,7 @@ const Cart = () => {
                   {/* BUTTON START */}
                   <button
                       className="w-full py-4 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 flex items-center gap-2 justify-center"
-                     onClick={()=>Checkout({
-                        lineItems : [{price :'2222' , quantity : 2}]
-                     })}
+                     
                   >
                       Checkout
                     
